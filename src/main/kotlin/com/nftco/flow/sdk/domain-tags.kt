@@ -9,6 +9,9 @@ object DomainTag {
     val USER_DOMAIN_TAG = normalize("FLOW-V0.0-user")
 
     @JvmStatic
+    val ACCOUNT_PROOF_DOMAIN_TAG = normalize("FCL-ACCOUNT-PROOF-V0.0")
+
+    @JvmStatic
     fun normalize(tag: String): ByteArray {
         val bytes = tag.toByteArray(Charsets.UTF_8)
         return when {
