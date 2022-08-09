@@ -160,6 +160,10 @@ tasks {
             }
         }
     }
+    
+    compileTestFixturesKotlin {
+        enabled = false
+    }
 
     publishing {
         publications {
