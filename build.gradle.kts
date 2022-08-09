@@ -160,7 +160,7 @@ tasks {
             }
         }
     }
-    
+
     compileTestFixturesKotlin {
         enabled = false
     }
@@ -198,12 +198,12 @@ tasks {
         }
     }
 
-    signing {
-        if (getProp("signing.key") != null) {
-            useInMemoryPgpKeys(getProp("signing.key"), getProp("signing.password"))
-        } else {
-            useGpgCmd()
-        }
-        sign(publishing.publications)
-    }
+//    signing {
+//        if (getProp("signing.key") != null) {
+//            useInMemoryPgpKeys(getProp("signing.key"), getProp("signing.password"))
+//        } else {
+//            useGpgCmd()
+//        }
+//        sign(publishing.publications)
+//    }
 }
