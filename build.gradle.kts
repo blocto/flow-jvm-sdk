@@ -39,21 +39,22 @@ repositories {
 }
 
 dependencies {
-    api("org.jetbrains.kotlin:kotlin-reflect:1.5.10")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.5.10")
     dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:1.6.0")
 
-    api("org.onflow:flow:0.21")
+    implementation("org.onflow:flow:0.21")
 
-    api("com.github.Doge-is-Dope:java-rlp:rlp-android-SNAPSHOT")
+    implementation("org.projectlombok:lombok:1.18.24")
+    annotationProcessor("org.projectlombok:lombok:1.18.24")
 
-    api("org.bouncycastle:bcpkix-jdk15on:1.69")
+    implementation("org.bouncycastle:bcpkix-jdk15on:1.69")
 
-    api(platform("com.fasterxml.jackson:jackson-bom:2.12.2"))
-    api("com.fasterxml.jackson.core:jackson-core")
-    api("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation(platform("com.fasterxml.jackson:jackson-bom:2.12.2"))
+    implementation("com.fasterxml.jackson.core:jackson-core")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
-    testApi("org.junit.jupiter:junit-jupiter:5.8.2")
-    testApi("org.assertj:assertj-core:3.21.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
+    testImplementation("org.assertj:assertj-core:3.21.0")
 
     testFixturesImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
 }
