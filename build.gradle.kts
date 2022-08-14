@@ -44,7 +44,7 @@ dependencies {
 
     api("org.onflow:flow:0.21")
 
-    api("com.github.TrustedDataFramework:java-rlp:1.1.20")
+    api("com.github.Doge-is-Dope:java-rlp:rlp-android-SNAPSHOT")
 
     api("org.bouncycastle:bcpkix-jdk15on:1.69")
 
