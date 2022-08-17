@@ -4,10 +4,10 @@ import com.google.protobuf.ByteString
 import com.google.protobuf.UnsafeByteOperations
 import com.nftco.flow.sdk.cadence.EventField
 import com.nftco.flow.sdk.cadence.Field
+import com.nftco.flow.sdk.rlp.RLP
+import com.nftco.flow.sdk.rlp.RLPCodec
 import org.onflow.protobuf.access.Access
 import org.onflow.protobuf.entities.*
-import org.tdf.rlp.RLP
-import org.tdf.rlp.RLPCodec
 import java.io.Serializable
 import java.math.BigDecimal
 import java.math.BigInteger
